@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D54F9691AC15E1E00811F90 /* model in Resources */ = {isa = PBXBuildFile; fileRef = 7D54F9681AC15E1E00811F90 /* model */; };
 		7D70BA511AC0A30200A18F2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D70BA501AC0A30200A18F2E /* AppDelegate.m */; };
 		7D70BA531AC0A30200A18F2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D70BA521AC0A30200A18F2E /* main.m */; };
 		7D70BA551AC0A30200A18F2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D70BA541AC0A30200A18F2E /* Images.xcassets */; };
 		7D70BA581AC0A30200A18F2E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D70BA561AC0A30200A18F2E /* MainMenu.xib */; };
 		7D70BA641AC0A30200A18F2E /* sphinx_mac_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D70BA631AC0A30200A18F2E /* sphinx_mac_testTests.m */; };
+		7D70BA6E1AC0A31D00A18F2E /* test_live.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D70BA6D1AC0A31D00A18F2E /* test_live.c */; };
+		7D70BA731AC0A61500A18F2E /* libpocketsphinx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D70BA701AC0A61500A18F2E /* libpocketsphinx.a */; };
+		7D70BA741AC0A61500A18F2E /* libsphinxad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D70BA711AC0A61500A18F2E /* libsphinxad.a */; };
+		7D70BA751AC0A61500A18F2E /* libsphinxbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D70BA721AC0A61500A18F2E /* libsphinxbase.a */; };
+		7D70BA771AC0A64C00A18F2E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D70BA761AC0A64C00A18F2E /* OpenAL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D54F9681AC15E1E00811F90 /* model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = model; sourceTree = "<group>"; };
 		7D70BA4A1AC0A30100A18F2E /* sphinx-mac-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sphinx-mac-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70BA4E1AC0A30200A18F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D70BA4F1AC0A30200A18F2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +42,12 @@
 		7D70BA5D1AC0A30200A18F2E /* sphinx-mac-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sphinx-mac-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70BA621AC0A30200A18F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D70BA631AC0A30200A18F2E /* sphinx_mac_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sphinx_mac_testTests.m; sourceTree = "<group>"; };
+		7D70BA6D1AC0A31D00A18F2E /* test_live.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_live.c; sourceTree = "<group>"; };
+		7D70BA701AC0A61500A18F2E /* libpocketsphinx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpocketsphinx.a; sourceTree = "<group>"; };
+		7D70BA711AC0A61500A18F2E /* libsphinxad.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsphinxad.a; sourceTree = "<group>"; };
+		7D70BA721AC0A61500A18F2E /* libsphinxbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsphinxbase.a; sourceTree = "<group>"; };
+		7D70BA761AC0A64C00A18F2E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		7D70BA781AC0B32F00A18F2E /* test_live.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_live.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D70BA771AC0A64C00A18F2E /* OpenAL.framework in Frameworks */,
+				7D70BA741AC0A61500A18F2E /* libsphinxad.a in Frameworks */,
+				7D70BA751AC0A61500A18F2E /* libsphinxbase.a in Frameworks */,
+				7D70BA731AC0A61500A18F2E /* libpocketsphinx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D3B2F911AC0CDC90077765D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D54F9681AC15E1E00811F90 /* model */,
+			);
+			name = Assets;
+			path = "sphinx-mac-test";
+			sourceTree = "<group>";
+		};
 		7D70BA411AC0A30100A18F2E = {
 			isa = PBXGroup;
 			children = (
+				7D3B2F911AC0CDC90077765D /* Assets */,
+				7D70BA6F1AC0A5CA00A18F2E /* Frameworks */,
 				7D70BA4C1AC0A30100A18F2E /* sphinx-mac-test */,
 				7D70BA601AC0A30200A18F2E /* sphinx-mac-testTests */,
 				7D70BA4B1AC0A30100A18F2E /* Products */,
@@ -76,6 +104,8 @@
 		7D70BA4C1AC0A30100A18F2E /* sphinx-mac-test */ = {
 			isa = PBXGroup;
 			children = (
+				7D70BA6D1AC0A31D00A18F2E /* test_live.c */,
+				7D70BA781AC0B32F00A18F2E /* test_live.h */,
 				7D70BA4F1AC0A30200A18F2E /* AppDelegate.h */,
 				7D70BA501AC0A30200A18F2E /* AppDelegate.m */,
 				7D70BA541AC0A30200A18F2E /* Images.xcassets */,
@@ -109,6 +139,18 @@
 				7D70BA621AC0A30200A18F2E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7D70BA6F1AC0A5CA00A18F2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D70BA761AC0A64C00A18F2E /* OpenAL.framework */,
+				7D70BA701AC0A61500A18F2E /* libpocketsphinx.a */,
+				7D70BA711AC0A61500A18F2E /* libsphinxad.a */,
+				7D70BA721AC0A61500A18F2E /* libsphinxbase.a */,
+			);
+			name = Frameworks;
+			path = "sphinx-mac-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D54F9691AC15E1E00811F90 /* model in Resources */,
 				7D70BA551AC0A30200A18F2E /* Images.xcassets in Resources */,
 				7D70BA581AC0A30200A18F2E /* MainMenu.xib in Resources */,
 			);
@@ -212,6 +255,7 @@
 			files = (
 				7D70BA531AC0A30200A18F2E /* main.m in Sources */,
 				7D70BA511AC0A30200A18F2E /* AppDelegate.m in Sources */,
+				7D70BA6E1AC0A31D00A18F2E /* test_live.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +326,12 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-I/usr/local/include",
+					"-I/usr/local/include/pocketsphinx",
+					"-I/usr/local/include/sphinxbase",
+				);
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -317,6 +367,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-I/usr/local/include",
+					"-I/usr/local/include/pocketsphinx",
+					"-I/usr/local/include/sphinxbase",
+				);
+				OTHER_LDFLAGS = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -328,6 +384,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "sphinx-mac-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sphinx-mac-test",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,6 +399,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "sphinx-mac-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sphinx-mac-test",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -398,6 +462,7 @@
 				7D70BA691AC0A30200A18F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D70BA6A1AC0A30200A18F2E /* Build configuration list for PBXNativeTarget "sphinx-mac-testTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +471,7 @@
 				7D70BA6C1AC0A30200A18F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
